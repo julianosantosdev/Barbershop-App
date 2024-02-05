@@ -1,5 +1,6 @@
 "use-client";
 
+import { BookingItem } from "@/components/common/booking-item";
 import Header from "@/components/common/header";
 import SearchBar from "@/components/home/searchbar";
 import { format } from "date-fns";
@@ -16,8 +17,16 @@ export default function Home() {
             {format(new Date(), "EEEE',' dd 'de' MMMM", { locale: ptBR })}
           </p>
         </section>
+
         <section className="px-5 mt-6">
           <SearchBar />
+        </section>
+
+        <section className="px-5 mt-6">
+          <h2 className="text-xs uppercase text-gray-400 font-bold mb-3">
+            Agendamentos
+          </h2>
+          <BookingItem />
         </section>
       </main>
     </>
