@@ -1,6 +1,6 @@
 "use-client";
 
-import { BookingItem } from "@/components/common/booking-item";
+import BookingItem from "@/components/common/booking-item";
 import Header from "@/components/common/header";
 import SearchBar from "@/components/home/searchbar";
 import { format } from "date-fns";

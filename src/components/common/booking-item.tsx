@@ -35,4 +35,4 @@ const BookingItem = () => {
   );
 };
 
-export { BookingItem };
+export default BookingItem;
