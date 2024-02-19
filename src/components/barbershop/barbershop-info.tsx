@@ -40,7 +40,7 @@ const BarbershopInfo = ({ barbershop }: BarbershopInfoProps) => {
           className='opacity-70'
         />
       </div>
-      <div className='px-5 py-3'>
+      <div className='px-5 pt-3 pb-6 border-b border-solid border-secondary'>
         <h1 className='text-xl font-bold '>{barbershop.name}</h1>
 
         <div className='flex items-center gap-1 mt-2'>
