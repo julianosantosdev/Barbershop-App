@@ -13,9 +13,9 @@ const BarbershopCard = ({ barbershopData }: barbershopData) => {
   return (
     <>
       <Card className='min-w-[167px] max-w-[167px] rounded-2xl'>
-        <CardContent className='px-1 pt-1 pb-2'>
-          <div className='relative w-full h-[159px]'>
-            <div className='absolute top-2 left-1 z-10'>
+        <CardContent className='px-1 pb-2 pt-1'>
+          <div className='relative h-[159px] w-full'>
+            <div className='absolute left-1 top-2 z-10'>
               <Badge variant='secondary' className='flex items-center gap-2'>
                 <StarIcon size={12} className='fill-primary text-primary' />
                 <span className='text-gray-300'>5,0</span>
@@ -31,10 +31,10 @@ const BarbershopCard = ({ barbershopData }: barbershopData) => {
           </div>
 
           <div className='px-2'>
-            <h2 className='font-bold mt-2 overflow-hidden text-ellipsis text-nowrap'>
+            <h2 className='mt-2 overflow-hidden text-ellipsis text-nowrap font-bold'>
               {barbershopData.name}
             </h2>
-            <p className='text-sm text-gray-400 overflow-hidden text-ellipsis text-nowrap'>
+            <p className='overflow-hidden text-ellipsis text-nowrap text-sm text-gray-400'>
               {barbershopData.address}
             </p>
           </div>
@@ -44,9 +44,9 @@ const BarbershopCard = ({ barbershopData }: barbershopData) => {
             Reservar
           </Button> */}
 
-          <div className='flex mt-3'>
+          <div className='mt-3 flex'>
             <Link
-              className='w-full flex justify-center p-2 bg-gray-800 rounded text-gray-400 hover:bg-primary hover:text-gray-950'
+              className='flex w-full justify-center rounded bg-gray-800 p-2 text-gray-400 hover:bg-primary hover:text-gray-950'
               href={`/barbershop/${barbershopData.id}`}
             >
               Reservar

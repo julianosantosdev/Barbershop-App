@@ -1,9 +1,7 @@
-'use client';
 import { ChevronLeftIcon, MenuIcon, MapPinIcon, StarIcon } from 'lucide-react';
 import { Button } from '../ui/button';
 import Image from 'next/image';
 import { Barbershop } from '@prisma/client';
-import { useRouter } from 'next/router';
 import Link from 'next/link';
 
 interface BarbershopInfoProps {
@@ -13,11 +11,11 @@ interface BarbershopInfoProps {
 const BarbershopInfo = ({ barbershop }: BarbershopInfoProps) => {
   return (
     <div>
-      <div className='h-[250px] w-full relative'>
+      <div className='relative h-[250px] w-full'>
         <Button
           size={'icon'}
           variant={'outline'}
-          className='z-50 absolute top-2 left-2'
+          className='absolute left-2 top-2 z-50'
         >
           <Link href={`/`}>
             <ChevronLeftIcon />
@@ -27,7 +25,7 @@ const BarbershopInfo = ({ barbershop }: BarbershopInfoProps) => {
         <Button
           size={'icon'}
           variant={'outline'}
-          className='z-50 absolute top-2 right-2'
+          className='absolute right-2 top-2 z-50'
         >
           <MenuIcon />
         </Button>
@@ -40,15 +38,15 @@ const BarbershopInfo = ({ barbershop }: BarbershopInfoProps) => {
           className='opacity-70'
         />
       </div>
-      <div className='px-5 pt-3 pb-6 border-b border-solid border-secondary'>
+      <div className='border-b border-solid border-secondary px-5 pb-6 pt-3'>
         <h1 className='text-xl font-bold '>{barbershop.name}</h1>
 
-        <div className='flex items-center gap-1 mt-2'>
+        <div className='mt-2 flex items-center gap-1'>
           <MapPinIcon className='text-primary' size={18} />
           <p className='text-sm'>{barbershop.address}</p>
         </div>
 
-        <div className='flex items-center gap-1 mt-2'>
+        <div className='mt-2 flex items-center gap-1'>
           <StarIcon className='text-primary' size={18} />
           <p className='text-sm'>5,0 (90 avaliações)</p>
         </div>

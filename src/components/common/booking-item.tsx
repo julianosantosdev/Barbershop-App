@@ -5,9 +5,9 @@ import { Avatar, AvatarFallback, AvatarImage } from '../ui/avatar';
 const BookingItem = () => {
   return (
     <Card>
-      <CardContent className='p-5 py-0 flex justify-between'>
+      <CardContent className='flex justify-between p-5 py-0'>
         <div className='flex flex-col gap-2 py-2'>
-          <Badge className='bg-[#221C3D] text-primary hover:-bg-[] w-fit'>
+          <Badge className='hover:-bg-[] w-fit bg-[#221C3D] text-primary'>
             Confirmado
           </Badge>
           <h2 className='font-bold'>Corte de Cabelo</h2>
