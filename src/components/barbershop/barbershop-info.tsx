@@ -36,6 +36,7 @@ const BarbershopInfo = ({ barbershop }: BarbershopInfoProps) => {
           fill
           style={{ objectFit: 'cover' }}
           className='opacity-70'
+          priority={true}
         />
       </div>
       <div className='border-b border-solid border-secondary px-5 pb-6 pt-3'>

@@ -19,6 +19,7 @@ const BarberShopServicesItem = ({ service }: BarbershopServicesProp) => {
               alt={service.name}
               fill
               style={{ objectFit: 'contain' }}
+              sizes='110px'
             />
           </div>
 
